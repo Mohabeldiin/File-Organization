@@ -30,7 +30,7 @@ namespace File_Organization
         private void InitializeComponent()
         {
             this.label1 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.FileName = new System.Windows.Forms.TextBox();
             this.Create = new System.Windows.Forms.Button();
             this.Open = new System.Windows.Forms.Button();
             this.Delete = new System.Windows.Forms.Button();
@@ -41,7 +41,7 @@ namespace File_Organization
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.ID = new System.Windows.Forms.TextBox();
-            this.Name = new System.Windows.Forms.TextBox();
+            this.Name1 = new System.Windows.Forms.TextBox();
             this.Phone = new System.Windows.Forms.TextBox();
             this.Year = new System.Windows.Forms.TextBox();
             this.Gender = new System.Windows.Forms.TextBox();
@@ -60,12 +60,12 @@ namespace File_Organization
             this.label1.TabIndex = 0;
             this.label1.Text = "File Name";
             // 
-            // textBox1
+            // FileName
             // 
-            this.textBox1.Location = new System.Drawing.Point(109, 41);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(125, 27);
-            this.textBox1.TabIndex = 1;
+            this.FileName.Location = new System.Drawing.Point(109, 41);
+            this.FileName.Name = "FileName";
+            this.FileName.Size = new System.Drawing.Size(125, 27);
+            this.FileName.TabIndex = 1;
             // 
             // Create
             // 
@@ -75,6 +75,7 @@ namespace File_Organization
             this.Create.TabIndex = 2;
             this.Create.Text = "Create";
             this.Create.UseVisualStyleBackColor = true;
+            this.Create.Click += new System.EventHandler(this.Create_Click);
             // 
             // Open
             // 
@@ -93,6 +94,7 @@ namespace File_Organization
             this.Delete.TabIndex = 4;
             this.Delete.Text = "Delete";
             this.Delete.UseVisualStyleBackColor = true;
+            this.Delete.Click += new System.EventHandler(this.Delete_Click);
             // 
             // TheLabel
             // 
@@ -155,12 +157,12 @@ namespace File_Organization
             this.ID.Size = new System.Drawing.Size(125, 27);
             this.ID.TabIndex = 11;
             // 
-            // Name
+            // Name1
             // 
-            this.Name.Location = new System.Drawing.Point(109, 130);
-            this.Name.Name = "Name";
-            this.Name.Size = new System.Drawing.Size(125, 27);
-            this.Name.TabIndex = 12;
+            this.Name1.Location = new System.Drawing.Point(109, 130);
+            this.Name1.Name = "Name1";
+            this.Name1.Size = new System.Drawing.Size(125, 27);
+            this.Name1.TabIndex = 12;
             // 
             // Phone
             // 
@@ -191,6 +193,7 @@ namespace File_Organization
             this.Insert.TabIndex = 16;
             this.Insert.Text = "Insert";
             this.Insert.UseVisualStyleBackColor = true;
+            this.Insert.Click += new System.EventHandler(this.Insert_Click);
             // 
             // Search
             // 
@@ -230,7 +233,7 @@ namespace File_Organization
             this.Controls.Add(this.Gender);
             this.Controls.Add(this.Year);
             this.Controls.Add(this.Phone);
-            this.Controls.Add(this.Name);
+            this.Controls.Add(this.Name1);
             this.Controls.Add(this.ID);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
@@ -241,7 +244,7 @@ namespace File_Organization
             this.Controls.Add(this.Delete);
             this.Controls.Add(this.Open);
             this.Controls.Add(this.Create);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.FileName);
             this.Controls.Add(this.label1);
             this.Name = "Form1";
             this.Text = "Form1";
@@ -254,7 +257,7 @@ namespace File_Organization
         #endregion
 
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox FileName;
         private System.Windows.Forms.Button Create;
         private System.Windows.Forms.Button Open;
         private System.Windows.Forms.Button Delete;
@@ -265,7 +268,7 @@ namespace File_Organization
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.TextBox ID;
-        private System.Windows.Forms.TextBox Name;
+        private System.Windows.Forms.TextBox Name1;
         private System.Windows.Forms.TextBox Phone;
         private System.Windows.Forms.TextBox Year;
         private System.Windows.Forms.TextBox Gender;
